@@ -1,0 +1,24 @@
+## Beadandó
+dir()
+scan(file="vn1990.txt")
+vn = scan(file="vn1990.txt")
+str(vn)
+plot(vn)
+plot(x = vn, type="l")
+plot(x = vn, type="l", xlab = "t[nap]", ylab = "h[cm]")
+min(vn)
+max(vn)
+mean(vn)
+summary(vn)
+vn
+vn [365/2]
+quantile(vn)
+sd(vn)
+IQR(vn)
+sd(vn)*2
+set.seed(1)
+rnorm(length(vn), mean(vn), sd(vn))
+vn.rnorm = rnorm(length(vn), mean(vn), sd(vn))
+lines(vn.rnorm)
+summary(vn.rnorm)
+plot(x = vn, type="l", xlab = "t[nap]", ylab = "h[cm]", lwd = 2)
